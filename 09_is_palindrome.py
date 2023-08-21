@@ -21,3 +21,20 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    phrase = phrase.lower()
+
+    start = 0
+    end = len(phrase) - 1
+
+    while start < end:
+        if phrase[start] == " ":
+            start += 1
+        elif phrase[end] == " ":
+            end -= 1
+        elif phrase[start] == phrase[end]:
+            start += 1
+            end -= 1
+        else:
+            return False
+
+    return True
