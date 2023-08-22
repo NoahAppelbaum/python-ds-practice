@@ -14,3 +14,14 @@ def extract_full_names(people):
         >>> extract_full_names(names)
         ['Ada Lovelace', 'Grace Hopper']
     """
+
+    # iterate through list
+    # for each element in list -- make a fString with unpacked values
+
+    full_names = []
+
+    for dict in people:
+        first, last = dict.values()
+        full_names.append(f"{first} {last}")
+
+    return full_names
