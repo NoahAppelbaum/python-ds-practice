@@ -36,3 +36,6 @@ def multiple_letter_count(phrase):
     #     else:
     #         counter[char] = phrase.count[char]
     # return counter
+
+    # for char in phrase:
+    #     counter[char] = counter.get(char, phrase.count(char))
